@@ -129,7 +129,8 @@
             });
 
             if (_draggingDirection === 'vertical') {
-              this.style.height = 'auto'; // force to get its full height
+              /* BUG-001 : PF */
+              this.style.height = '100%'; // force to get its full height
               this._height = this.getBoundingClientRect().height;
             }
 

@@ -1,0 +1,20 @@
+________________________________________________________________________________
+BUG-001: Panels Element Full Height was calculated incorrectly
+
+On Chrome 58.0.3029.110 / Electron 1.7.4
+the original code of
+  this.style.height = 'auto'; // force to get its full height
+was producing a panel control whose height was incorrect (i.e. the <resizable-panels>
+style="height: xxx" was being assigned a value < parent containers height).
+
+Example:
+<div class="center panel" name="center" style="width: 662px; height: 806px;">
+  <resizable-panels vertical="" style="touch-action: none; height: 24px;">
+    <preview-web-test class="panel preview"></preview-web-test>
+    <div class="knob knob-panel-1"></div>
+    <div class="panel tabs">TABS</div>
+  </resizable-panels>
+</div>
+
+I assume that, it is calculating the height not based on the parent's height,
+but rather the sum of the heights of the child elements.
