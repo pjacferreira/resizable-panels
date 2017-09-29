@@ -5,7 +5,7 @@
     "Kus Cámara <kus.camara@gmail.com>",
     "Paulo Ferreira <pf@sourcenotes.org>"
   ],
-  "description": "Allows to resize horizontally or vertically its childrens",
+  "description": "Allows to resize horizontally or vertically its children",
   "keywords": [
     "web-component",
     "polymer",
@@ -13,11 +13,11 @@
     "panel"
   ],
   "main": "resizable-panels.html",
-  "license": "https://github.com/kcmr/resizable-panels/LICENSE.md",
-  "homepage": "https://github.com/kcmr/resizable-panels/",
+  "license": "https://github.com/pjacferreira/resizable-panels/LICENSE.md",
+  "homepage": "https://github.com/pjacferreira/resizable-panels/",
   "repository": {
     "type": "git",
-    "url": "git://github.com/kcmr/resizable-panels.git"
+    "url": "git://github.com/pjacferreira/resizable-panels.git"
   },
   "ignore": [],
   "dependencies": {
