@@ -128,13 +128,8 @@
               this._resetPanelStyles(children, _draggingDirection === 'vertical' ? 'width' : 'height');
             });
 
-            if (_draggingDirection === 'vertical') {
-              /* BUG-001 : PF */
-              this.style.height = '100%'; // force to get its full height
-              this._height = this.getBoundingClientRect().height;
-            }
-
-            this.style.height = _draggingDirection === 'vertical' ? `${this._height}px` : '';
+            /* NOTE-001 : PF */
+            this.style.height = _draggingDirection === 'vertical' ? '100%' : '';
           }
         }
 

@@ -1,0 +1,18 @@
+________________________________________________________________________________
+NOTE-001: Improvement on BUG-001
+
+BUG-001 explained why the <resizable-panels> was having it's height incorrectly
+calculated.
+
+But in reality, I wanted <resizable-panels> to assume 100% height of is container
+this allows for it to automatically resize along with the parent (and not have
+the scroll bars appear on resize).
+
+By just simply setting <resizable-panels style="height: 100%"> not only do
+we get the child panels height correct, but if we use percentages for child panels
+height, they maintain the proportion, if the parent is resized.
+
+Amazingly, at least on Chrome if you resize one of the child panels, it's height
+is maintained in percentage, so that if <resizable-panels> is resized, the
+child panels maintain the proportions!!
+
