@@ -1,8 +1,9 @@
 {
   "name": "resizable-panels",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "authors": [
-    "Kus Cámara <kus.camara@gmail.com>"
+    "Kus Cámara <kus.camara@gmail.com>",
+    "Paulo Ferreira <pf@sourcenotes.org>"
   ],
   "description": "Allows to resize horizontally or vertically its childrens",
   "keywords": [
